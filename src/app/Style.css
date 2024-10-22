@@ -1,0 +1,30 @@
+
+
+.header-bg {
+    /* background-color: red; */
+    /* background-color: #ED264F; */
+    /* background-color: #2E025E ; */
+    background-color: #6300A3 ;
+    /* margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);  */
+    padding: 0; 
+  }
+
+  .herosection-bg {
+    background-color: white;
+    /* margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);  */
+    padding: 0; 
+  }
+
+  .footer-bg {
+    background-color: rgb(24, 21, 19);
+    /* margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);  */
+    padding: 0; 
+  }
+
+  .ttt{
+    width: 300px;
+  }
+  
