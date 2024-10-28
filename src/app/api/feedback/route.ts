@@ -17,18 +17,3 @@ export async function GET() {
    
     return Response.json(body)
   }
-  export async function UPDATE(request:NextRequest) {
-    const body=await request.json()
-    
-
-   
-    return Response.json(body)
-  }
-
-  export async function DELETE(request:NextRequest) {
-    const body=await request.json()
-    
-
-   
-    return Response.json(body)
-  }

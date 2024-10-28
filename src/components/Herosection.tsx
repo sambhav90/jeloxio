@@ -1,4 +1,6 @@
-export default function Herosection() {
+import Link from "next/link";
+
+export default function Herosection({resp}:any) {
     return (
       <>
       <div className="herosection-bg flex justify-center my-8">
@@ -15,11 +17,13 @@ export default function Herosection() {
             </thead> */}
             <tbody>
             {
-                [0,1,2,3,4,5,6,7,8,9,10,11,12,13].map((item, i)=>{
+                resp.map((item:any, i:any)=>{
                     return(
                     <tr key={i} className={`${i%2 == 1?"bg-slate-100":""}`}>
                         <td className="w-[40px] text-xl text-center py-2 border border-[#BCBCBC]">{i}</td>
-                        <td className="text-black text-xl py-2 pl-4 border border-[#BCBCBC]">this is latest News Title</td>
+                        <Link href={"/"+item.title}>
+                        <td className="text-black text-xl py-2 pl-4 border border-[#BCBCBC]">{item.title}</td>
+                        </Link>
                     </tr>
                     )
                 })
