@@ -9,12 +9,31 @@ export default function Herosection({resp}:any) {
             <h3 className=" capitalize text-black">I Give you news short and clarification </h3>
           </div>
           <div>
-            <table className="border border-[#BCBCBC] border-collapse w-full">
+          <table className="border border-[#BCBCBC] border-collapse w-full">
+          <thead>
+            <tr className="border border-[#BCBCBC]">
+              <th className="border border-[#BCBCBC] text-xl text-black text-center py-2">#</th>
+              <th className="border border-[#BCBCBC] text-xl text-black text-left py-2">Title</th>
+            </tr>
+          </thead>
+          <tbody>
+            {resp.map((item: any, i: number) => (
+              <tr key={i} className={i % 2 === 1 ? "bg-slate-100" : ""}>
+                <td className="w-[40px] text-xl text-center py-2 border border-[#BCBCBC]">{i}</td>
+                <td className="text-black text-xl py-2 pl-4 border border-[#BCBCBC]">
+                  <Link href={`/${item.title}`}>{item.title}</Link>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+            {/* <table className="border border-[#BCBCBC] border-collapse w-full">
             {/* <thead>
                 <tr className="border border-[#BCBCBC]">
                 <th className="border border-[#BCBCBC] text-xl text-black text-center py-2">Posts</th> 
                 </tr>
-            </thead> */}
+            </thead> 
             <tbody>
             {
                 resp.map((item:any, i:any)=>{
@@ -29,7 +48,7 @@ export default function Herosection({resp}:any) {
                 })
             }
             </tbody>
-            </table>
+            </table> */}
           </div>
         </div>
       </div>

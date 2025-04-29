@@ -50,24 +50,25 @@ export default function Navigation() {
           </div>
         </div>
         {isOpen && <div className="absolute top-[49px] left-0 w-[100%] bg-[#181513] text-white p-4 z-[5]">
-                <ul className="">
-                <li className="py-2">Education</li>
-                <li className="py-2">Sports</li>
-                <li className="py-2">Biography</li>
-                <li className="py-2">Business</li>
-                <li className="py-2">Health</li>
-                <li className="py-2">Politics</li>
-                </ul>
+          <ul>
+            <li className="py-2 hover:text-[#f1eded] cursor-pointer">Education</li>
+            <li className="py-2 hover:text-[#f1eded] cursor-pointer">Sports</li>
+            <li className="py-2 hover:text-[#f1eded] cursor-pointer">Biography</li>
+            <li className="py-2 hover:text-[#f1eded] cursor-pointer">Business</li>
+            <li className="py-2 hover:text-[#f1eded] cursor-pointer">Health</li>
+            <li className="py-2 hover:text-[#f1eded] cursor-pointer">Politics</li>
+          </ul>
             </div>}
           <div className="md:block hidden">
-            <ul className="flex space-x-4 text-base font-medium text-white">
-              <li>Education</li>
-              <li>Sports</li>
-              <li>Biography</li>
-              <li>Business</li>
-              <li>Health</li>
-              <li>Politics</li>
-            </ul>
+          <ul className="flex space-x-4 text-base font-medium text-white">
+            <li className="hover:text-[#f1eded] cursor-pointer">Education</li>
+            <li className="hover:text-[#f1eded] cursor-pointer">Sports</li>
+            <li className="hover:text-[#f1eded] cursor-pointer">Biography</li>
+            <li className="hover:text-[#f1eded] cursor-pointer">Business</li>
+            <li className="hover:text-[#f1eded] cursor-pointer">Health</li>
+            <li className="hover:text-[#f1eded] cursor-pointer">Politics</li>
+          </ul>
+
           </div>
           
         </div>
