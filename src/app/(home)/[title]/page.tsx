@@ -1,8 +1,10 @@
 import React from 'react'
 import axios from 'axios'
 async function  Title({ params }: { params: { title: string } }) {
-    const resp= await axios.get('http://127.0.0.1:3000/api/blog?title='+params.title)
-    console.log(resp.data,"###############")
+  const baseURL = process.env.API_BASE_URL; 
+    const resp = await axios.get(`${baseURL}/api/blog?title=`+params.title);
+    // const resp= await axios.get('http://127.0.0.1:3000/api/blog?title='+params.title)
+    // console.log(resp.data,"###############")
     
   return (
     <>
